@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="todoList">
+    <head>
+        <title>TODO List</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li><a href="#/index">ToDo List</a></li>
+                            <li><a ui-sref="done">Done</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div ui-view></div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Loading Boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css"
+    rel="stylesheet">
+
+    <!-- Loading Angular.JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+    <!-- Loading Angular-UI-Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js">
+    </script>
+
+    <!-- Loading JS files -->
+    <script src="script/app.js"></script>
+    <script src="script/service/services.js"></script>
+    <script src="script/controller/todo.js"></script>
+
+</html>

@@ -4,7 +4,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routing APIs
 app.use('/api', require('./api/routes'));
@@ -13,6 +13,6 @@ app.use('/api', require('./api/routes'));
 app.use(express.static(path.join(__dirname, '../client')));
 
 // Start the server
-app.listen(8080, function() {
+app.listen(8080, function () {
     console.log("Server is starting at port 8080... ");
 });

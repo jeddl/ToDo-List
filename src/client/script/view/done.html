@@ -1,11 +1,12 @@
 <div class="page-header">
-    <h1>Done</h1>
+    <h1>History</h1>
 </div>
 <div ng-repeat="todo in todos" ng-show="todo.check">
     <span style="font-size:25px; margin-left:10px;">
         <ul>
             <li>
-                <input type="checkbox" ng-model="todo.check" value=""> {{todo.title}}
+                <!-- <input type="checkbox" ng-model="todo.check" value=""> {{todo.title}} -->
+                <p>{{todo.title}}</p>
                 <button type="button" class="btn btn-danger"
                 style="float: right;"
                 ng-click="deleteTodo(todo)">
